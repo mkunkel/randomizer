@@ -4,13 +4,13 @@ $(document).ready(function() {
 });
 
 var showPrompt = function() {
-  $('.prompt').removeClass('hidden');
+  $('.prompt').css('opacity', 1);
 };
 
 var clickHandler = function() {
-  $('.prompt').addClass('hidden');
-  $('.arrow').addClass('hidden');
-  $(randomArrow()).removeClass('hidden');
+  $('.prompt').animate({opacity: 0}, 400);
+  $('.arrow').animate({opacity: 0}, 400);
+  $(randomArrow()).animate({opacity: 1}, 400);
 };
 
 var randomArrow = function() {

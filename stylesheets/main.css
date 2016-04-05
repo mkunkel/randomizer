@@ -10,9 +10,10 @@ body {
 }
 
 .prompt {
-  position: relative;
+  position: absolute;
   height: 768px;
   width: 768px;
+  opacity: 0;
   text-align: center;
 }
 
@@ -37,6 +38,10 @@ body {
   transform: translateY(-50%) translateX(-50%);
 }
 
+.arrows > div {
+  display: inline-block;
+}
+
 .arrow {
   position: absolute;
   width: 768px;
@@ -46,13 +51,11 @@ body {
 }
 
 .left-arrow {
+  opacity: 0;
   background-image: url('../images/left.png');
 }
 
 .right-arrow {
+  opacity: 0;
   background-image: url('../images/right.png');
-}
-
-.hidden {
-  display: none;
 }
