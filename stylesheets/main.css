@@ -10,9 +10,6 @@ body {
 }
 
 .prompt {
-  position: absolute;
-  height: 768px;
-  width: 768px;
   opacity: 0;
   text-align: center;
 }
@@ -29,8 +26,6 @@ body {
 
 .arrows {
   position: relative;
-  height: 768px;
-  width: 768px;
   left: 50%;
   top: 50%;
   -webkit-transform: translateY(-50%) translateX(-50%);
@@ -43,11 +38,12 @@ body {
 }
 
 .arrow {
-  position: absolute;
-  width: 768px;
-  height: 768px;
   display: inline-block;
   background-size: 100%;
+}
+
+.arrow, .prompt{
+  position: absolute;
 }
 
 .left-arrow {
@@ -58,4 +54,39 @@ body {
 .right-arrow {
   opacity: 0;
   background-image: url('../images/right.png');
+}
+
+.arrows, .prompt, .arrow {
+  width: 768px;
+  height: 768px;
+}
+
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+  .arrows, .prompt, .arrow {
+    width: 512px;
+    height: 512px;
+  }
+}
+
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  .arrows, .prompt, .arrow {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+  .arrows, .prompt, .arrow {
+    width: 300px;
+    height: 300px;
+  }
 }
