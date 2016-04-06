@@ -1,6 +1,11 @@
 body {
-  background: #000000;
+  background: #223;
   color: #FFF;
+}
+
+.disclaimer {
+  font-style: italic;
+  text-align: center;
 }
 
 .container {
@@ -24,6 +29,14 @@ body {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+}
+
+.adsense {
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  width: 640px;
+  height: 90px;
 }
 
 .arrows {
