@@ -100,8 +100,7 @@ body {
 
 @media only screen
   and (min-device-width: 320px)
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2) {
+  and (max-device-width: 480px) {
   .arrows, .arrow {
     width: 300px;
     height: 300px;
@@ -115,8 +114,7 @@ body {
 
 @media only screen
   and (min-device-width: 414px)
-  and (max-device-width: 736px)
-  and (-webkit-min-device-pixel-ratio: 3) {
+  and (max-device-width: 736px) {
   .arrows, .arrow {
     width: 400px;
     height: 400px;
