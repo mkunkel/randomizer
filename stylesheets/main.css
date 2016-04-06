@@ -50,6 +50,7 @@ body {
   position: relative;
   left: 50%;
   top: 50%;
+  width: 768px;
   -webkit-transform: translateY(-50%) translateX(-50%);
   -ms-transform: translateY(-50%) translateX(-50%);
   transform: translateY(-50%) translateX(-50%);
@@ -60,8 +61,10 @@ body {
 }
 
 .arrow {
+  width: 100%;
   display: inline-block;
   background-size: 100%;
+  background-repeat: no-repeat
 }
 
 .arrow, .prompt{
@@ -79,7 +82,6 @@ body {
 }
 
 .arrows, .arrow {
-  width: 768px;
   height: 768px;
 }
 
@@ -88,8 +90,7 @@ body {
   and (max-device-width: 1024px)
   and (-webkit-min-device-pixel-ratio: 1) {
   .arrows, .arrow {
-    width: 700px;
-    height: 700px;
+    width: 90%;
   }
 
   .prompt > span {
@@ -102,8 +103,7 @@ body {
   and (min-device-width: 320px)
   and (max-device-width: 480px) {
   .arrows, .arrow {
-    width: 300px;
-    height: 300px;
+    width: 90%;
   }
 
   .prompt > span {
@@ -116,8 +116,7 @@ body {
   and (min-device-width: 414px)
   and (max-device-width: 736px) {
   .arrows, .arrow {
-    width: 400px;
-    height: 400px;
+    width: 90%;
   }
 
   .prompt > span {
